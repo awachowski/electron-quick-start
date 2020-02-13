@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../main.css">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' gap:; script-src 'self' data: https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js; object-src *; style-src 'self' data: 'unsafe-inline'; img-src 'self' data:; media-src 'self' data:; font-src 'self' data:; connect-src *">
+</head>
+
+<body>
+    <div class="game_window">
+        <div id="namer-input" class="cheeky">
+            <input type="text" id="inputName" name="namername" placeholder="Type your name">
+        </div>
+        <div class="stopwatch" id="timer">00:00:00</div>
+        <div>
+            <button class="btn btn_restart" id="restart"> Restart</button>
+            <button class="btn btn_back" id="back"> Back</button>
+        </div>
+        <div id="board" class="game_section">
+        </div>
+    </div>
+
+    <script src="../js/game.js"></script>
+</body>
+
+</html>
