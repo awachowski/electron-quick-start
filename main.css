@@ -33,6 +33,10 @@ body {
 
 }
 
+.flag{
+background: yellow !important;
+}
+
 table {
     display: block;
     border: black;
@@ -75,6 +79,9 @@ tr {
     display: inline-block;
 }
 
+.flag{
+	background: yellow !important;
+}
 
 .row {
     font-size: 0px;

@@ -237,6 +237,12 @@ window.addEventListener('load', function () {
         resetGame();
     });
 
+$board.on('mousedown', '.col.hidden', function (ev) {
+	if (ev.which == 3) {
+		$(this).toggleClass('flag');
+	}
+});
+
     $board.on('click', '.col.hidden', function () {
         const $cell = $(this);
         const row = $cell.data('row');
